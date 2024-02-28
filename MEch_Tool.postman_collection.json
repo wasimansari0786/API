@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "3783387f-96c3-4c52-8cd2-e408c9469240",
+		"name": "MEch_Tool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14292891"
+	},
+	"item": [
+		{
+			"name": "MechTool_OTPSend",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "BP_Number",
+						"value": "4241213",
+						"type": "text"
+					},
+					{
+						"key": "App_Ver",
+						"value": "6.4",
+						"type": "text"
+					},
+					{
+						"key": "Android_Ver",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Device_Id",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Device_Mod",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Source",
+						"value": "Service",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Mobile_No\":\"8356942522\",\r\n   \"Password\":\"86c2172e4aabafd45665c4e0fca7b810\",\r\n   \"Salt\":\"RPsaB#i%LF9)B\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.asianpaints.com/v1/msi_app/MechTool_OTPSend",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"asianpaints",
+						"com"
+					],
+					"path": [
+						"v1",
+						"msi_app",
+						"MechTool_OTPSend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MechTool_ValidateOTP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "BP_Number",
+						"value": "4241213",
+						"type": "text"
+					},
+					{
+						"key": "App_Ver",
+						"value": "6.4",
+						"type": "text"
+					},
+					{
+						"key": "Android_Ver",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Device_Id",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Device_Mod",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Source",
+						"value": "Service",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"OTP\":\"123456\",\r\n    \"Salt\":\"RPsaB#i%LF9)B\",\r\n    \"Password\":\"86c2172e4aabafd45665c4e0fca7b810\",\r\n    \"points\":\"200\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.asianpaints.com/v1/msi_app/MechTool_ValidateOTP",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"asianpaints",
+						"com"
+					],
+					"path": [
+						"v1",
+						"msi_app",
+						"MechTool_ValidateOTP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MechTool_Schemes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "BP_Number",
+						"value": "4241213",
+						"type": "text"
+					},
+					{
+						"key": "App_Ver",
+						"value": "6.4",
+						"type": "text"
+					},
+					{
+						"key": "Android_Ver",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Device_Id",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Device_Mod",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Source",
+						"value": "Service",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n    \"Salt\":\"RPsaB#i%LF9)B\",\r\n    \"Password\":\"86c2172e4aabafd45665c4e0fca7b810\",\r\n    \"Region\":\"EAST\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.asianpaints.com/v1/msi_app/MechTool_Schemes",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"asianpaints",
+						"com"
+					],
+					"path": [
+						"v1",
+						"msi_app",
+						"MechTool_Schemes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MechTool_DealerSearch",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "BP_Number",
+						"value": "4241213",
+						"type": "text"
+					},
+					{
+						"key": "App_Ver",
+						"value": "6.4",
+						"type": "text"
+					},
+					{
+						"key": "Android_Ver",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Device_Id",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Device_Mod",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Source",
+						"value": "Service",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n   \r\n    \"Salt\":\"RPsaB#i%LF9)B\",\r\n    \"Password\":\"86c2172e4aabafd45665c4e0fca7b810\",\r\n    \"dealerBp\":\"00001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.asianpaints.com/v1/msi_app/MechTool_DealerSearch",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"asianpaints",
+						"com"
+					],
+					"path": [
+						"v1",
+						"msi_app",
+						"MechTool_DealerSearch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MechTool_SchemeDetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "BP_Number",
+						"value": "4241213",
+						"type": "text"
+					},
+					{
+						"key": "App_Ver",
+						"value": "6.4",
+						"type": "text"
+					},
+					{
+						"key": "Android_Ver",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Device_Id",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Device_Mod",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Source",
+						"value": "Service",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n   \r\n    \"Salt\":\"RPsaB#i%LF9)B\",\r\n    \"Password\":\"86c2172e4aabafd45665c4e0fca7b810\",\r\n    \"Product_Id\":\"04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apidev.asianpaints.com/v1/msi_app/MechTool_SchemeDetails",
+					"protocol": "https",
+					"host": [
+						"apidev",
+						"asianpaints",
+						"com"
+					],
+					"path": [
+						"v1",
+						"msi_app",
+						"MechTool_SchemeDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
